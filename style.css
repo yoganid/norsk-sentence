@@ -109,7 +109,7 @@ body {
   }
   .div1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 0px;
 
     display: flex;
@@ -150,7 +150,7 @@ body {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-width: 380px) {
   .div1 {
     position: absolute;
     top: 0%;
