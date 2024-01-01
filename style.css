@@ -1,5 +1,6 @@
 body {
   background-color: rgb(14, 29, 45);
+  height: 100%;
   text-align: center;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -89,10 +90,10 @@ body {
 
 @media (max-width: 500px) {
   .span2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .span {
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -130,11 +131,11 @@ body {
     width: 30%;
   }
   .div3 {
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 70px;
   }
   .div4 {
-    font-size: 35px;
+    font-size: 20px;
   }
 }
 
