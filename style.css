@@ -149,3 +149,19 @@ body {
     width: 30%;
   }
 }
+
+@media (max-height: 700px) {
+  .div1 {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 300px;
+  }
+  .div2 {
+    margin-bottom: 100px;
+  }
+}
