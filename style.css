@@ -7,31 +7,38 @@ body {
 }
 
 .display {
-  margin-top: 10%;
+  margin-top: 5%;
   /* background-color: rgb(100, 120, 141); */
   border-radius: 15px;
   padding: 5px;
 }
 
 .div1 {
-  margin-top: 5%;
+  margin-top: 10%;
   font-size: 25px;
-  min-height: 50px;
+  min-height: 20px;
   border-radius: 15px;
   text-align: center;
   padding-bottom: 5px;
 }
 .div2 {
-  /* background-color: rgb(178, 202, 222); */
   border-radius: 15px;
   padding: 5%;
   text-align: center;
-  /* height: 100%; */
+
   min-height: 35px;
   margin-left: 2%;
   margin-right: 2%;
 }
 .div3 {
+  border-radius: 15px;
+  color: aliceblue;
+  text-align: center;
+
+  height: 50px;
+  font-size: 25px;
+}
+.div4 {
   border-radius: 15px;
   color: aliceblue;
   text-align: center;
@@ -45,7 +52,7 @@ body {
   font-size: 30px;
   /* background-color: rgb(229, 238, 238); */
   color: wheat;
-  margin: 1px;
+  margin: 3px;
   border-radius: 5px;
   padding-left: 1%;
   padding-right: 1%;
@@ -69,44 +76,76 @@ body {
 }
 
 .btn-next {
-  margin-top: 50px;
-  /* height: 50px;
-  /* width: 500px; */
-  width: 100px;
+  position: absolute;
+  top: 80%;
+  left: calc(90vw / 2);
+  width: 10%;
   padding: 10px;
-  /* font-size: 25px; */
+
   border-radius: 10px;
   border: none;
+  margin-top: 50px;
 }
 
 @media (max-width: 500px) {
   .span2 {
-    font-size: 15px;
+    font-size: 30px;
   }
   .span {
-    font-size: 15px;
+    font-size: 40px;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .div2 {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 15px;
     margin-bottom: 150px;
     margin-left: 0px;
     margin-right: 0px;
     padding: 5%;
-    min-height: 25px;
+    min-height: 35px;
   }
   .div1 {
-    font-size: 15px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin: 20px;
+    margin-top: 300px;
   }
-  .div3 {
-    font-size: 15px;
-  }
+
   .display {
     margin-top: 20%;
+  }
+
+  .btn-next {
+    position: absolute;
+    top: 85%;
+    left: calc(70vw / 2);
+    width: 30%;
+  }
+  .div3 {
+    font-size: 35px;
+    margin-top: 70px;
+  }
+  .div4 {
+    font-size: 35px;
   }
 }
 
 @media (max-height: 500px) {
   .display {
     margin-top: 1%;
+  }
+  .btn-next {
+    position: absolute;
+    top: 75%;
+    left: calc(70vw / 2);
+    width: 30%;
   }
 }

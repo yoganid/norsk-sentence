@@ -1491,6 +1491,7 @@ const data = [
 const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
 const div3 = document.getElementById("div3");
+const div4 = document.getElementById("div4");
 
 let number = getRandomNumber(0, data.length - 1);
 
@@ -1561,7 +1562,7 @@ function check() {
       div1.style.color = "white";
       let text1 = text.join(" ");
       let translate1 = translate.join(" ");
-      div1.innerHTML = `${text1}`;
+      div4.innerHTML = `${text1}`;
       div3.innerHTML = `${translate1}`;
     }
   }
@@ -1591,6 +1592,7 @@ function restart() {
   div1.innerHTML = "";
   div2.innerHTML = "";
   div3.innerHTML = "";
+  div4.innerHTML = "";
   div2.style.backgroundColor = "";
   div1.style.color = "black";
 
