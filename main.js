@@ -1,4 +1,4 @@
-const data = [
+let data = [
   { text: "Jeg inviterer kameraten", translate: "Я приглашаю моего друга" },
   { text: "Jeg ser fire kaniner", translate: "Я вижу четырех кроликов" },
   { text: "Jeg må lære og lese nå", translate: "Мне нужно научиться читать сейчас" },
@@ -1487,6 +1487,22 @@ const data = [
   { text: "Denne var helt rå", translate: "Этот был совершенно сырым" },
   { text: "Kjøttet var rått", translate: "Мясо было сырым" },
 ];
+
+function filter(data, number) {
+  let filterData = [];
+  for (let i = 0; i < data.length; i++) {
+    let count = data[i].text.split(" ");
+    if (count.length >= number) {
+      console.log(`${number}`);
+    } else {
+      filterData.push(data[i]);
+      i++;
+    }
+  }
+  return filterData;
+}
+
+data = filter(data, 5);
 
 const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
