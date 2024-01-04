@@ -1499,10 +1499,12 @@ function filter(data, number) {
       i++;
     }
   }
+  console.log(filterData.length);
+
   return filterData;
 }
 
-data = filter(data, 5);
+data = filter(data, 6);
 
 const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
