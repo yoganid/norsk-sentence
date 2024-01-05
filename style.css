@@ -81,11 +81,15 @@ body {
   top: 80%;
   left: calc(90vw / 2);
   width: 10%;
+  height: 8%;
   padding: 10px;
 
   border-radius: 10px;
   border: none;
   margin-top: 50px;
+}
+.hide {
+  display: none;
 }
 
 @media (max-width: 500px) {
@@ -128,6 +132,7 @@ body {
     position: absolute;
     top: 85%;
     left: calc(70vw / 2);
+
     width: 30%;
   }
   .div3 {

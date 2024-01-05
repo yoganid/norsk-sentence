@@ -1495,12 +1495,16 @@ function filter(data, number) {
     if (count.length >= number) {
       console.log(`${number}`);
     } else {
-      filterData.push(data[i]);
-      i++;
+      let arr = data[i].text.split(" ");
+      if (arr.indexOf("og") !== -1) {
+        console.log("i have og");
+      } else {
+        filterData.push(data[i]);
+        i++;
+      }
     }
   }
   console.log(filterData.length);
-
   return filterData;
 }
 
@@ -1510,6 +1514,7 @@ const div1 = document.getElementById("div1");
 const div2 = document.getElementById("div2");
 const div3 = document.getElementById("div3");
 const div4 = document.getElementById("div4");
+let btn = document.querySelector(".btn-next");
 
 let number = getRandomNumber(0, data.length - 1);
 
@@ -1574,6 +1579,7 @@ function check() {
       let translate1 = translate.join(" ");
 
       div3.innerHTML = `${translate1}`;
+      btn.className = "btn-next";
     } else {
       div2.style.backgroundColor = "rgba(228, 141, 160, 0.703)";
 
@@ -1582,6 +1588,7 @@ function check() {
       let translate1 = translate.join(" ");
       div4.innerHTML = `${text1}`;
       div3.innerHTML = `${translate1}`;
+      btn.className = "btn-next";
     }
   }
 }
@@ -1613,6 +1620,7 @@ function restart() {
   div4.innerHTML = "";
   div2.style.backgroundColor = "";
   div1.style.color = "black";
+  btn.className = "btn-next hide";
 
   number = getRandomNumber(0, data.length - 1);
   text = data[number].text.split(" ");
@@ -1626,6 +1634,6 @@ function restart() {
   game();
 }
 
-document.querySelector(".btn-next").addEventListener("click", (e) => {
+btn.addEventListener("click", (e) => {
   restart();
 });
