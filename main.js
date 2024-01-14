@@ -9990,7 +9990,7 @@ function getRandomNumber(min, max) {
 
 function restart() {
   if (500 >= window.innerWidth) {
-    div1.style.marginTop = "250px";
+    div1.style.marginTop = "200px";
   }
 
   div1.innerHTML = "";
