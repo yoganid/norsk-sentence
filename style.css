@@ -15,7 +15,7 @@ body {
 }
 
 .div1 {
-  margin-top: 10%;
+  /* margin-top: 1%; */
   font-size: 25px;
   min-height: 20px;
   border-radius: 15px;
@@ -114,14 +114,14 @@ body {
   }
   .div1 {
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
     left: 0px;
 
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
     margin: 20px;
-    margin-top: 300px;
+    margin-top: 250px;
   }
 
   .display {
